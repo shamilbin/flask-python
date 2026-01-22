@@ -1,54 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My App</title>
-<link rel="stylesheet" href="{{url}}">
-</head>
-<body>
 
-<header class="hero">
+{% extends 'base.html'%} 
 
-  
-  <nav>
-    <h2 class="logo">MyApp</h2>
-    <ul>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#" class="btn">Get Started</a></li>
-    </ul>
-  </nav>
 
-  <div class="hero-content">
-    <h1>Build Smarter. Launch Faster.</h1>
-    <p>A modern platform to turn your ideas into scalable digital products.</p>
-    <a href="#" class="btn primary">Start Free</a>
-    <a href="#" class="btn outline">Learn More</a>
-  </div>
-</header>
+{% block head %}
 
-<section class="features">
-  <h2>Why Choose Us?</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Fast Performance</h3>
-      <p>Optimized architecture for blazing-fast speed and reliability.</p>
-    </div>
-    <div class="card">
-      <h3>Secure Platform</h3>
-      <p>Built with modern security standards to keep your data safe.</p>
-    </div>
-    <div class="card">
-      <h3>Easy to Use</h3>
-      <p>Intuitive interface designed for a smooth user experience.</p>
-    </div>
-  </div>
-</section>
+{% endblock%}
 
-<footer>
-  <p>© 2026 MyApp. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+{% block body %}
+<h1>Hello World</h1>
+{% endblock%}
