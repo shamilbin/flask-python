@@ -60,6 +60,7 @@ def index():
     if request.method == 'POST':
         
         
+        
         task_content = request.form['content']
         
         new_Task = Todo(content=task_content)
