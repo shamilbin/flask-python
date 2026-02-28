@@ -61,6 +61,7 @@ def index():
         
         
         task_content = request.form['content']
+        
         new_Task = Todo(content=task_content)
         try:
             db.session.add(new_Task)
